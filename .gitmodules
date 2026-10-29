@@ -1,6 +1,6 @@
-[submodule "better-design-product"]
-	path = better-design-product
-	url = ../better-design-product.git
-[submodule "better-design-marketing"]
-	path = better-design-marketing
-	url = ../better-design-marketing.git
+[submodule "verynize-product"]
+	path = verynize-product
+	url = ../verynize-product.git
+[submodule "verynize-marketing"]
+	path = verynize-marketing
+	url = ../verynize-marketing.git

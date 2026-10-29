@@ -1,44 +1,39 @@
-# Better Design
+# Verynize
 
-Repository induk untuk produk dan marketing Better Design.
+Repository induk untuk produk dan marketing Verynize.
 
-- `better-design-product/`: submodule aplikasi Electron, editor, CLI/MCP, dan collaboration Worker.
-- `better-design-marketing/`: submodule landing page TanStack Start untuk produk.
+- `verynize-product/`: submodule aplikasi Electron, editor, CLI/MCP, dan collaboration Worker.
+- `verynize-marketing/`: submodule landing page TanStack Start untuk produk.
 
 ## Pengembangan produk
 
 Jalankan perintah aplikasi dari folder produk:
 
 ```sh
-cd better-design-product
+cd verynize-product
 npm install
 npm start
 ```
 
-Panduan lengkap ada di `better-design-product/README.md` dan `better-design-product/AGENTS.md`.
+Panduan lengkap ada di `verynize-product/README.md` dan `verynize-product/AGENTS.md`.
 Commit perubahan produk di submodule terlebih dahulu, lalu commit pembaruan pointer submodule di repo induk.
 
 ## Pengembangan marketing
 
 ```sh
-cd better-design-marketing
+cd verynize-marketing
 npm install
 npm run dev
 ```
 
-Buka http://localhost:3000. Panduan dan validasi ada di `better-design-marketing/README.md`.
+Buka http://localhost:3000. Panduan dan validasi ada di `verynize-marketing/README.md`.
 
-## Submodule lokal
-
-Repo ini belum memiliki remote hosting. URL submodule sementara adalah
-`../better-design-product.git` dan `../better-design-marketing.git`, bare repositories lokal di samping repo induk.
-Simpan repository tersebut bersama workspace ini; clone repo induk saja tidak mencakup objek Git produk.
-
-Untuk clone lokal dengan submodule:
+## Clone dari GitHub
 
 ```sh
-git -c protocol.file.allow=always clone --recurse-submodules /path/to/better-design /path/to/checkout
+git clone --recurse-submodules https://github.com/AdamAbd/verynize.git
 ```
 
-Setelah remote produk tersedia, push commit produk ke remote tersebut, ganti URL
-pada `.gitmodules`, jalankan `git submodule sync`, dan commit perubahan konfigurasi.
+Submodule produk dan marketing berada di `AdamAbd/verynize-product` dan
+`AdamAbd/verynize-marketing`. Commit dan push perubahan submodule terlebih dahulu,
+lalu commit pembaruan pointer di repository induk.
