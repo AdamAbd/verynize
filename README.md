@@ -3,7 +3,7 @@
 Repository induk untuk produk dan marketing Better Design.
 
 - `better-design-product/`: submodule aplikasi Electron, editor, CLI/MCP, dan collaboration Worker.
-- `better-design-marketing/`: direncanakan sebagai submodule terpisah saat repo marketing tersedia.
+- `better-design-marketing/`: submodule landing page TanStack Start untuk produk.
 
 ## Pengembangan produk
 
@@ -18,10 +18,20 @@ npm start
 Panduan lengkap ada di `better-design-product/README.md` dan `better-design-product/AGENTS.md`.
 Commit perubahan produk di submodule terlebih dahulu, lalu commit pembaruan pointer submodule di repo induk.
 
+## Pengembangan marketing
+
+```sh
+cd better-design-marketing
+npm install
+npm run dev
+```
+
+Buka http://localhost:3000. Panduan dan validasi ada di `better-design-marketing/README.md`.
+
 ## Submodule lokal
 
 Repo ini belum memiliki remote hosting. URL submodule sementara adalah
-`../better-design-product.git`, sebuah bare repository lokal di samping repo induk.
+`../better-design-product.git` dan `../better-design-marketing.git`, bare repositories lokal di samping repo induk.
 Simpan repository tersebut bersama workspace ini; clone repo induk saja tidak mencakup objek Git produk.
 
 Untuk clone lokal dengan submodule:
