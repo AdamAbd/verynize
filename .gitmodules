@@ -1,0 +1,3 @@
+[submodule "better-design-product"]
+	path = better-design-product
+	url = ../better-design-product.git
