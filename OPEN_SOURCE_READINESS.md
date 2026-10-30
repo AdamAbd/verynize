@@ -12,7 +12,7 @@ Completed:
 
 Pending:
 - Resolve redistribution rights of third-party reference screenshots and verbatim vendor text; see product THIRD_PARTY_NOTICES.md. No history rewrite or deletion performed.
-- Production environment, required reviewer/main restrictions, branch rules, and scoped deployment credentials before enabling `ENABLE_PRODUCTION_DEPLOY`. Existing local cf deployment remains available.
-- Push product and marketing commits before pushing the parent workspace commit. Setup changes are committed locally; no push has been performed.
+- Production environment, required reviewer/main restrictions, scoped deployment credentials before enabling `ENABLE_PRODUCTION_DEPLOY`. Existing local cf deployment remains available.
+- Production environment configuration and third-party provenance follow-up remain separate from the branch-policy rollout.
 
 No production deployment was performed. No Cloudflare token was copied, generated, or exposed.
