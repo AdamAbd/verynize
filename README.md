@@ -37,3 +37,12 @@ git clone --recurse-submodules https://github.com/AdamAbd/verynize.git
 Submodule produk dan marketing berada di `AdamAbd/verynize-product` dan
 `AdamAbd/verynize-marketing`. Commit dan push perubahan submodule terlebih dahulu,
 lalu commit pembaruan pointer di repository induk.
+
+## Kontribusi dan keamanan
+
+Baca [CONTRIBUTING.md](CONTRIBUTING.md) dan [SECURITY.md](SECURITY.md).
+Panduan [deploy dengan akun sendiri dan pemisahan secrets](verynize-product/docs/open-source-deployment.md) tersedia di repo produk. Fork tidak memperoleh akses ke akun Cloudflare maintainer.
+
+## License
+
+Original Verynize code and documentation are licensed under the [MIT License](LICENSE). Third-party materials retain their own rights and licenses; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
