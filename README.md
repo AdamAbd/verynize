@@ -1,9 +1,10 @@
 # Verynize
 
-Repository induk untuk produk dan marketing Verynize.
+Repository induk untuk produk, marketing, dan koleksi skill Verynize.
 
 - `verynize-product/`: submodule aplikasi Electron, editor, CLI/MCP, dan collaboration Worker.
 - `verynize-marketing/`: submodule landing page TanStack Start untuk produk.
+- `verynize-skills/`: submodule dokumentasi dan distribusi 13 skill desain untuk MCP Verynize.
 
 ## Pengembangan produk
 
@@ -27,6 +28,19 @@ npm run dev
 ```
 
 Buka http://localhost:3000. Panduan dan validasi ada di `verynize-marketing/README.md`.
+
+## Koleksi skill
+
+Koleksi tersedia di [verynize/verynize-skills](https://github.com/verynize/verynize-skills).
+Baca `verynize-skills/README.md` untuk instalasi dan prasyarat MCP Verynize.
+Untuk menyinkronkan dokumentasi setelah perubahan skill produk sudah di-commit:
+
+```sh
+node verynize-skills/scripts/sync-from-product.mjs
+node verynize-skills/scripts/sync-from-product.mjs --check
+```
+
+Commit dan push perubahan koleksi di submodule terlebih dahulu, lalu commit pointer di repo induk.
 
 ## Clone dari GitHub
 

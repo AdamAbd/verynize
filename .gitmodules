@@ -4,3 +4,6 @@
 [submodule "verynize-marketing"]
 	path = verynize-marketing
 	url = ../verynize-marketing.git
+[submodule "verynize-skills"]
+	path = verynize-skills
+	url = ../verynize-skills.git
